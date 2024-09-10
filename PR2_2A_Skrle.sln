@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Opakování", "00-Opakování", "{1A8A9FF1-7D89-4FAD-8590-BC740874A912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-opakovani-00-demo", "00-opakovani-00-demo\00-opakovani-00-demo.csproj", "{1F39EE46-FE86-45D4-AD5B-1C77745576AE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F39EE46-FE86-45D4-AD5B-1C77745576AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F39EE46-FE86-45D4-AD5B-1C77745576AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F39EE46-FE86-45D4-AD5B-1C77745576AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F39EE46-FE86-45D4-AD5B-1C77745576AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F39EE46-FE86-45D4-AD5B-1C77745576AE} = {1A8A9FF1-7D89-4FAD-8590-BC740874A912}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {62178165-7964-43C6-BDBF-EFF507BC95F7}
