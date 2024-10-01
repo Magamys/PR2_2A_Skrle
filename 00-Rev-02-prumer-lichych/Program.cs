@@ -5,10 +5,9 @@
         static void Main(string[] args)
         {
             string vklad;
-            int num;
-            int celkem = 0;
-            int i = 0;
-            
+            double num;
+            double celkem = 0;
+            int pocet = 0;
 
             Console.WriteLine("Zadej celé číslo, nebo stop: ");
 
@@ -19,22 +18,29 @@
                 if (vklad == "stop")
                     break;
 
-                int.TryParse(vklad, out num);
+                double.TryParse(vklad, out num);
+                
 
                 if (num > 0 && num % 2 != 0)
                 {
                     celkem += num;
-                    i++;
+                    pocet++;
                 }
+
+                
                     
             }
 
-            double prumer = celkem / i;
+            
 
-            if(i == 0)
+            if(pocet == 0)
                 Console.WriteLine("nebylo vloženo žádné kladné liché číslo");
             else
+            {
+                double prumer = celkem / pocet;
                 Console.WriteLine(prumer);
+            }
+                
         }
     }
 }
