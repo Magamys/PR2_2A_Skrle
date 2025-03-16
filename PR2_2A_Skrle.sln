@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-OOP-Dedicnost", "Test-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hanojska-vez", "Hanojska-vez\Hanojska-vez.csproj", "{809D3D16-E721-4566-B1B5-3D1976D274D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozikyyy", "Vozikyyy\Vozikyyy.csproj", "{C1635B50-E596-4DE0-B488-A2EA0ECBE32F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vozikyyy", "Vozikyyy\Vozikyyy.csproj", "{C1635B50-E596-4DE0-B488-A2EA0ECBE32F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bludiste", "Bludiste\Bludiste.csproj", "{EBFDF29E-B1BC-4BE3-8687-A00E0BC81BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt-obchodnici", "Projekt-obchodnici\Projekt-obchodnici.csproj", "{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{C1635B50-E596-4DE0-B488-A2EA0ECBE32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1635B50-E596-4DE0-B488-A2EA0ECBE32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1635B50-E596-4DE0-B488-A2EA0ECBE32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFDF29E-B1BC-4BE3-8687-A00E0BC81BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFDF29E-B1BC-4BE3-8687-A00E0BC81BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFDF29E-B1BC-4BE3-8687-A00E0BC81BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFDF29E-B1BC-4BE3-8687-A00E0BC81BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
