@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bludiste", "Bludiste\Bludis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt-obchodnici", "Projekt-obchodnici\Projekt-obchodnici.csproj", "{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SokobanV1", "..\..\..\source\repos\SokobanV1\SokobanV1\SokobanV1.csproj", "{8DC0DE17-006A-B74D-26A4-0B7FC6984D32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AD3E9E9-6177-4D42-BBA7-0E0C2B8C7556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC0DE17-006A-B74D-26A4-0B7FC6984D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC0DE17-006A-B74D-26A4-0B7FC6984D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC0DE17-006A-B74D-26A4-0B7FC6984D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC0DE17-006A-B74D-26A4-0B7FC6984D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

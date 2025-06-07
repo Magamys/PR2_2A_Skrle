@@ -1,0 +1,68 @@
+﻿	Sokoban
+
+Skládá se ze tříd:
+	1. MainWindow
+	2. Obstacle
+	3. Box
+	4. TargetSpot
+	5. MainWindow.Xaml
+
+Třída Obstacle
+	• Reprezentuje nepřístupné body na mapě „zdi“.
+	• Drží souřadnice zdí.
+
+Třída TargetSpot
+	• Reprezentuje cílové body na mapě, kam má hráč posunout krabice
+	• Podobně jako u Obstacle, drží souřadnice cílů
+
+Třída Box
+	• Reprezentuje posuvnou krabici
+	• Ukládá souřadnice krabic
+	• Metody:
+		- IsAt(int x, int y) – Zkontroluje, zdali je krabice na souřadnicích X a Y
+		- IsOnTarget(List<TargetSpot>) – Zkontroluje všechny cílové body v listu, jestli se jejich souřadnice neshodují s nějakými 			souřadnicemi krabice. 
+		- public bool TryMoveTo(int newX, int newY, bool[,] obstacleMap, int gridSize) – Zkontroluje, zda-li jsou nové souřadnice, 			kam se má krabice posunout v mapě a jestli na nich není zeď. Pokud je pozice volná, vrátí true, jinak false.
+
+Třída MainWindow
+	• Stará se o hlavní logiku hry – načítání map ze souboru, inicializace grafiky, stisky kláves a ostatní herní logiku.
+	
+	• Důležité proměnné:
+		- private Rectangle player – vizuální reprezentace hráče
+		- private int GridSize = 0 – počáteční velikost mapy
+		- private int playerX = 0; private int playerY = 0 – souřadnice hráče
+		- private List<Box> boxes = new List<Box>() – list držící všechny krabice
+		- private List<Rectangle> boxVisuals = new List<Rectangle>() - Seznam všech vizuálních prvků krabic v UI. Pořadí odpovídá 			seznamu boxes.
+		- private List<TargetSpot> targetSpots = new List<TargetSpot>() – Seznam všech cílových bodů
+		- private List<Obstacle> obstacles = new List<Obstacle>() – Seznam všech zdí
+
+	• Metody
+		- private void DrawBoxes() – Projede seznam krabic a vykreslí je do mapy
+		- private void DrawObstacles() – Projde seznam překážek a vykreslí je do mapy
+		- private void DrawPlayer() – Vykreslí hráče
+		- private void DrawTargetSpots() – Projde seznam cílových bodů a vykreslí je do mapy
+		- private void LoadMapFromFile(string filePath) – Načte mapu ze souboru a podle jednotlivých znaků definuje prvky hry. 				Také vytvoří velikost mapy a pomocí zanků ji vykreslí. 
+		- private void InitGrid() – inicializuje grid ve WPF
+		- UpdatePlayerPosition() - Aktualizuje pozici vizuálního prvku hráče.
+		- UpdateBoxVisual(Box box, Rectangle visual) - Aktualizuje vizuální pozici dané krabice
+		
+		- Window_KeyDown(object sender, KeyEventArgs e)
+			 Pomocí toho, jakou klávesu hráč stiskne (šipky a esc) určí, jakým směrem se hráč pokusí pohnout.
+			 Zkontroluje, jestli nová pozice není mimo grid nebo jestli na ní již není nějaký objekt.
+			 Pokud na nové pozici je krabice, vytvoří novou pozici pro krabici. Pro ni poté zkontroluje, jestli není mimo 					grid nebo jestli na ni není jiný objekt. Poté zkontroluje, jestli není krabice na cílovém bodě.
+			 Nakonec zkontroluje přes metodu private void CheckWinCondition(), jestli jsou všechny krabice na cílových bodech
+		- private bool IsObstacleAt(int x, int y) – zkontroluje, jestli není na nové pozici zeď
+		- Lvl_1_Click, Lvl_2_Click, Lvl_3_Click – spustí level, který si hráč vybral
+		- private void StartGame(string filePath) – Spustí hru a přepne herní panely
+		- private void RestartGame_click(object sender, RoutedEventArgs e) – přepne herní panel zpět na start panel
+		- private void CheckWinCondition() – Zkontroluje, jestli jsou všechny krabice na cílových bodech. Pokud ano, ukáže výherní 			panel.
+
+MainWindow.xaml
+	• Vytvoří tři panely:
+		- StartPanel – panel, kde si hráč vybere, který level chce hrát.
+		- GamePanel – herní mapa
+		- WinPanel – ohlášení výhry s tlačítkem, které vede zpět na úvodní panel
+
+
+
+
+

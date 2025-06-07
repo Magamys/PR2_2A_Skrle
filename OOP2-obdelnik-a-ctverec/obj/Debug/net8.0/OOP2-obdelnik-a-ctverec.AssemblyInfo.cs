@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OOP2-obdelnik-a-ctverec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb2a6f5509fc9c805dde9037e0e1f40a5eacbf6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("OOP2-obdelnik-a-ctverec")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OOP2-obdelnik-a-ctverec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

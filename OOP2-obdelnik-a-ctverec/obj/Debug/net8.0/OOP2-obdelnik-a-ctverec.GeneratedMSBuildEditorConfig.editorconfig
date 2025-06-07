@@ -11,3 +11,5 @@ build_property.RootNamespace = OOP2_obdelnik_a_ctverec
 build_property.ProjectDir = C:\Users\Škrle Štěpán\Desktop\Programování\PR2_2A_Skrle\OOP2-obdelnik-a-ctverec\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
